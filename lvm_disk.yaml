@@ -11,6 +11,14 @@
         state: present
         part_start: 1GiB
 
+    - name: Create a new primary partition for LVM
+      parted:
+        device: /dev/xvdf
+        number: 2
+        flags: [ lvm ]
+        state: present
+        part_start: 1GiB
+
     - name: Install lvm2 dependency
       package:
         name: lvm2
