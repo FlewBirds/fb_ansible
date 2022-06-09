@@ -4,7 +4,7 @@
   become: true
   tasks:
     - name: Create a new primary partition for LVM
-      community.general.parted:
+      parted:
         device: /dev/xvdf
         number: 1
         flags: [ lvm ]
