@@ -17,7 +17,7 @@
         number: 2
         flags: [ lvm ]
         state: present
-        part_start: 1GiB
+        part_start: 2GiB
 
     - name: Install lvm2 dependency
       package:
