@@ -10,14 +10,6 @@
         flags: [ lvm ]
         state: present
         part_start: 8GiB
-        
-    - name: create partition
-      parted:
-        device: /dev/xvdf1
-        number: 1
-        flags: [ lvm ]
-        state: present
-        part_end: 2GB
 
     - name: Install lvm2 dependency
       package:
