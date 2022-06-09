@@ -19,7 +19,7 @@
     - name: task for creating volume group
       lvg:
           vg: sample-vg
-          pvs: /dev/xvdf1p1
+          pvs: /dev/xvdf1
           pesize: 16
 
     - name: task for creating logical volume
